@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Doctype informa ao agente de usuario a versão de html que deve ser renderizada-->
+<html lang="pt-br">
+	<head>
+		<title>Pagina de exemplo estrutura basica</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Maykon">
+		<meta name="description" content="Lista de documentos">
+		<meta name="keywords" content="html5, tecnologia">
+
+		<style type="text/css">
+			
+			body{
+				background-image: url(imagens/covid.jpg); 
+			}
+
+			h1{
+				text-align: center;
+				color: white;
+			}
+
+			.retorno{
+				width: 300px;
+				margin: 50px auto 0;
+			}
+
+			.retorno fieldset{
+				background: white;
+				margin-top: 15px;
+			}
+
+			.retorno legend{
+				background: white;
+			}
+
+			.retorno label{
+				margin-top: 5px;
+				display: block;
+			}
+
+			.btn{
+				margin-top: 8px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Formulario retorno de ferias (COVID)</h1>
+
+		<form action="#" method="post" class="retorno">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+
+				<label>Nome completo</label>
+				<input type="text" required="" name="">
+
+				<label>Número da matricula</label>
+				<input type="number" name="">
+
+				<label>Número de telefone</label>
+				<input type="number" name="">
+
+				<label>Qual seu turno</label>
+				<input type="text" name="">
+
+				<label>Qual sua área</label>
+				<input type="text" name="">
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Informações gerais</legend>
+
+				<label>Testou positivo para COVID19 nos últimos 14 dias?</label>
+					<label><input type="radio" name="COVID" value="S">
+						Sim
+					</label>
+					<label><input type="radio" name="COVID" value="N">
+						Não
+				</label>
+
+				<label>Você esta aguardando o resultado do teste a uma exposição ao COVID19?</label>
+					<input type="radio" name="teste" value="S">
+						Sim
+					</label>
+					<label><input type="radio" name="teste" value="N">
+						Não
+					</label>
+
+				<label>Teve contato com alguém confirmado ou suspeito de COVID19 nos últimos 14 dias? </label>
+				<input type="radio" name="contato" value="S">
+						Sim
+				</label>
+				<label><input type="radio" name="contato" value="N">
+					Não
+				</label>
+
+				<label>Você teve algum dos sintomas nos últimos 14 dias?</label>
+				<label><input type="checkbox" name="febre">Febre</label>
+				<label><input type="checkbox" name="tosse">Tosse</label>
+				<label><input type="checkbox" name="dific">Dificuldade de respirar</label>
+				<label><input type="checkbox" name="paladar">Perda de paladar ou olfato</label>
+				<label><input type="checkbox" name="ar">Falta de ar</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Veracidade</legend>
+				<label><input type="radio" name="veracidade" required="">Eu atesto que todas as respostas acima são verdadeiras</label>
+
+			</fieldset>
+
+			<button type="submit" class="btn">Enviar</button> 
+
+			
+		</form>
+
+
+	</body>
+
+</html>
